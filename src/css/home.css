@@ -1,0 +1,324 @@
+.list-todo {
+  align-self: center;
+  background-color: transparent;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  width: 60%;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.update {
+  background-color: transparent;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.update input,
+.user {
+  font-size: 18px;
+  color: white;
+  background-color: transparent;
+  width: 100%;
+  border: 1px solid white;
+  padding: 6px 16px;
+  border-radius: 12px;
+  margin-top: 8px;
+}
+
+.read-data {
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  width: 100%;
+}
+
+select option {
+  color: white;
+  background-color: #001f29;
+}
+.update-btn {
+  width: 10rem;
+  border: none;
+  margin-top: 1rem;
+  outline: none;
+  transition: box-shadow 200ms ease, background-color 200ms ease-in-out;
+  background-color: rgb(247, 226, 223);
+  color: rgb(0, 0, 0);
+  margin-left: 8px;
+}
+
+.update-btn:hover {
+  cursor: pointer;
+
+  background-color: white;
+  box-shadow: #fff8 0 0 10px;
+}
+
+h2 {
+  align-self: center;
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* #363532, rgb(88, 111, 112) */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Work Sans", sans-serif;
+  min-height: 100vh;
+  padding-top: 3%;
+}
+
+/* Body light or darker themes */
+.standard {
+  background-image: linear-gradient(100deg, #575656, #062e3f);
+  color: #ffdfdb;
+  transition: 0.3s linear;
+  overflow: hidden;
+}
+
+.light {
+  background-image: linear-gradient(100deg, #d4f1ff, #ffffff);
+  color: #1a150e;
+  transition: 0.3s linear;
+}
+
+.darker {
+  background-image: linear-gradient(100deg, #001214, #001f29);
+  color: white;
+  transition: 0.3s linear;
+}
+
+#header,
+#datetime {
+  margin: 0 1rem;
+  min-height: 10vh;
+  width: 100%;
+}
+
+#header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  min-height: 25vh;
+  width: 100%;
+}
+
+/* Theme buttons div */
+.flexrow-container {
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 3%;
+}
+
+.theme-selector {
+  border: 1px solid #d1dae3;
+  border-radius: 100%;
+  height: 35px;
+  margin: 0 8px;
+  transition: tranform 150ms ease-in-out, box-shadow 200ms ease-in-out;
+  width: 35px;
+}
+
+.theme-selector:hover {
+  box-shadow: white 0 0 8px;
+  cursor: pointer;
+}
+
+.theme-selector:active {
+  transform: scale(0.95);
+}
+
+.standard-theme {
+  background-image: linear-gradient(100deg, #575656, #062e3f);
+}
+
+.light-theme {
+  background-image: linear-gradient(100deg, #d4f1ff, #ffffff);
+}
+
+.darker-theme {
+  background-image: linear-gradient(100deg, #001214, #001f29);
+}
+
+/* Animation */
+.title {
+  border-right: solid 3px rgba(0, 0, 0, 0.75);
+  white-space: pre;
+  overflow: hidden;
+  letter-spacing: 0.2rem;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  max-width: 500px;
+}
+
+/* Animation */
+.title {
+  animation: animated-text 2s steps(11, end) 0.5s 1 normal both,
+    animated-cursor 750ms steps(11, end) infinite;
+}
+
+.title.darker-title {
+  animation: animated-text 2s steps(11, end) 0.5s 1 normal both,
+    darker-animated-cursor 750ms steps(11, end) infinite;
+}
+
+.read-button {
+  width: 6rem;
+  border: none;
+  outline: none;
+  transition: box-shadow 200ms ease, background-color 200ms ease-in-out;
+  background-color: rgb(247, 226, 223);
+  color: rgb(0, 0, 0);
+  margin-left: 8px;
+}
+
+.read-button:hover {
+  cursor: pointer;
+
+  background-color: white;
+  box-shadow: #fff8 0 0 10px;
+}
+/* text animation */
+
+p {
+  color: white;
+}
+
+.status-false {
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(49, 67, 200);
+  font-size: 1rem;
+  border-radius: 12px;
+  padding: 8px 16px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.status-false:hover {
+  background-color: transparent;
+  border-color: white;
+}
+
+.status-false p {
+  margin: 0;
+}
+
+.status-true {
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(49, 200, 104);
+  font-size: 1rem;
+  border-radius: 12px;
+  padding: 8px 16px;
+  border: 1px solid white;
+}
+
+.status-true p {
+  margin: 0;
+}
+@keyframes animated-text {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 480px;
+  }
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: rgba(0, 0, 0, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes darker-animated-cursor {
+  from {
+    border-right-color: #01394c;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+/* Responsive design */
+@media only screen and (max-width: 1000px) {
+  .flexrow-container {
+    align-self: unset;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #header {
+    font-size: 2rem;
+  }
+
+  .title {
+    animation: animated-text 3s steps(16, end) 0.5s 1 normal both,
+      animated-cursor 750ms steps(16, end) infinite;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    max-width: 330px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #header {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    animation: animated-text 3.5s steps(16, end) 0.5s 1 normal both,
+      animated-cursor 750ms steps(16, end) infinite;
+    max-width: 255px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  form {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  form input {
+    border-radius: 17px;
+  }
+
+  form button {
+    border-radius: 15px;
+    margin-top: 15px;
+    width: 50%;
+  }
+  form > button.light-button {
+    box-shadow: 0 0 5px lightgray;
+  }
+}

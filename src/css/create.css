@@ -1,0 +1,58 @@
+.create-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.create-form input {
+  margin-bottom: 1rem;
+  width: 40rem;
+  height: 3rem;
+  border-radius: 12px;
+  color: black;
+
+  padding: 0 3rem;
+}
+
+.create-form .drop-user {
+  margin-bottom: 1rem;
+  width: 40rem;
+  height: 3rem;
+  border-radius: 12px;
+  color: black;
+  cursor: pointer;
+  padding: 0 3rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+select {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.create-form button {
+  width: 15rem;
+  border: none;
+  outline: none;
+  transition: box-shadow 200ms ease, background-color 200ms ease-in-out;
+  background-color: rgb(247, 226, 223);
+  color: rgb(0, 0, 0);
+}
+
+button:hover {
+  cursor: pointer;
+
+  background-color: white;
+  box-shadow: #fff8 0 0 10px;
+}
+
+.create {
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
